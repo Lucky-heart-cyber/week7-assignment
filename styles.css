@@ -1,0 +1,57 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+section {
+  margin: 30px 0;
+}
+
+/* --- Part 1: CSS Transitions --- */
+.hover-btn {
+  background: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.4s, transform 0.3s;
+}
+
+.hover-btn:hover {
+  background: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* --- Part 3: Box Animations --- */
+#box {
+  width: 120px;
+  height: 120px;
+  background: coral;
+  margin: 20px auto;
+  transition: transform 0.6s ease;
+}
+
+/* Applied dynamically */
+.animate {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* Keyframes animation */
+@keyframes flash {
+  0% { background: coral; }
+  50% { background: gold; }
+  100% { background: coral; }
+}
+
+.flash {
+  animation: flash 1s 3;
+}
